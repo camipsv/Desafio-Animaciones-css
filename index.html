@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animaciones css</title>
+    <link rel="stylesheet" href="../assets/css/style.css"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Fontdiner+Swanky&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylecopy.css" />
+  </head>
+  <body id="top">
+    <div class="grid-container">
+      <div class="ticker-container">
+        <div class="ticker">
+          Envío gratis por compras sobre $30.000.
+          <i class="fa-solid fa-truck-fast"></i> Despacho dentro de 24 horas.
+          <i class="fa-solid fa-plane"></i> Envíos a todo Chile.
+        </div>
+      </div>
+      <header>
+        <img src="./assets/img/logo.jpg" />
+        <div class="titulo">
+          <h1>Dragón arcano</h1>
+          <p>Juegos de mesa</p>
+        </div>
+
+        <div class="perma-icon">
+          <div class="navbar-xs">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" href="#carrusel">Destacados</a>
+                <a class="nav-link" href="#mesa">Juegos de mesa</a>
+                <a class="nav-link" href="#cartas">Juegos de cartas</a>
+                <a class="nav-link" href="#rol">Juegos de rol</a>
+                <a class="nav-link" href="#accesorios">Accesorios</a>
+                <a class="nav-link" href="#colection">Coleccionables</a>
+                <a class="nav-link" href="#librería">Librería</a>
+                <a class="nav-link" href="#oferta">Ofertas</a>
+                <a class="nav-link" href="#preventa">Preventas</a>
+                <a class="nav-link" href="#noticias">Noticias</a>
+                <a class="nav-link" href="#comunidad">Comunidad</a>
+              </div>
+            </div>
+          </div>
+          <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href=""><i class="fa-solid fa-user"></i></a>
+        </div>
+      </header>
+
+      <nav>
+        <div>
+          <a href="#contact">Contacto</a>
+          <a href="#carrusel">Destacados</a>
+          <a href="#mesa">Juegos de mesa</a>
+          <a href="#cartas">Juegos de cartas</a>
+          <a href="#rol">Juegos de rol</a>
+          <a href="#accesorios">Accesorios</a>
+          <a href="#colection">Coleccionables</a>
+          <a href="#librería">Librería</a>
+          <a href="#oferta">Ofertas</a>
+          <a href="#preventa">Preventas</a>
+          <a href="#noticias">Noticias</a>
+          <a href="#comunidad">Comunidad</a>
+        </div>
+      </nav>
+
+      <div class="filtros">
+        <div>
+          <p>Buscar por nombre <i class="fa-solid fa-magnifying-glass"></i></p>
+          <input type="text" />
+        </div>
+        <div>
+          <p>Ordenar por:</p>
+          <select>
+            <option value="precio">Precio mayor</option>
+            <option value="precio">Precio menor</option>
+            <option value="oferta">En oferta</option>
+            <option value="masvendidos">Mas vendidos</option>
+          </select>
+        </div>
+        <div>
+          <p>Mostrar solo artículos:</p>
+          Disponibles <input type="checkbox" /> Todos <input type="checkbox" />
+        </div>
+      </div>
+
+      <main>
+        <div id="carrusel" class="carousel slide" data-bs-ride="carousel">
+          <h3>Destacados</h3>
+          <!-- Indicadores -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carrusel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carrusel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carrusel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+
+          <!-- Contenido del carrusel -->
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="card-carrusel card mb-3 mx-auto w-100">
+                <div class="row g-0">
+                  <!-- Imagen ajustada -->
+                  <div class="col-12 col-md-4">
+                    <img
+                      src="./assets/img/the-art-and-making-of-arcane.jpg"
+                      class="img-fluid rounded-start mx-auto d-block"
+                      style="
+                        object-fit: cover;
+                        height: 100%;
+                        max-height: 200px;
+                        width: 100%;
+                      "
+                    />
+                  </div>
+                  <!-- Contenido ajustado -->
+                  <div class="col-12 col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        The art and making of Arcane (ENG)
+                      </h5>
+                      <p class="card-text">$54.990</p>
+                      <p class="card-text">
+                        <small class="text-body-secondary"
+                          ><button class="btn btn-primary btn-sm">
+                            Ver más
+                          </button></small
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="card-carrusel card mb-3 mx-auto w-100">
+                <div class="row g-0">
+                  <div class="col-12 col-md-4">
+                    <img
+                      src="./assets/img/Monkey D. Luffy King of Artist II (versión Gear 5).JPG"
+                      class="img-fluid rounded-start mx-auto d-block"
+                      style="
+                        object-fit: cover;
+                        height: 100%;
+                        max-height: 200px;
+                        width: 100%;
+                      "
+                    />
+                  </div>
+                  <div class="col-12 col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Monkey D. Luffy (Gear 5)</h5>
+                      <p class="card-text">$39.990</p>
+                      <p class="card-text">
+                        <small class="text-body-secondary"
+                          ><button class="btn btn-primary btn-sm">
+                            Ver más
+                          </button></small
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="card-carrusel card mb-3 mx-auto w-100">
+                <div class="row g-0">
+                  <div class="col-12 col-md-4">
+                    <img
+                      src="./assets/img/reyna.JPG"
+                      class="img-fluid rounded-start mx-auto d-block"
+                      style="
+                        object-fit: cover;
+                        height: 100%;
+                        max-height: 200px;
+                        width: 100%;
+                      "
+                    />
+                  </div>
+                  <div class="col-12 col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Estatua Reyna VALORANT</h5>
+                      <p class="card-text">$145.990</p>
+                      <p class="card-text">
+                        <small class="text-body-secondary"
+                          ><button class="btn btn-primary btn-sm">
+                            Ver más
+                          </button></small
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controles del carrusel -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carrusel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carrusel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+
+        <div class="juegodemesa" id="mesa">
+          <h3>Juegos de mesa</h3>
+          <section class="card-container">
+            <div class="card">
+              <img src="./assets/img/catan.JPG" />
+              <h6>Catán</h6>
+              <p>$29.990</p>
+              <button>Ver más</button>
+            </div>
+            <div class="card">
+              <img src="./assets/img/dondelaspapasqueman.JPG" />
+              <h6>Donde las papas queman</h6>
+              <p>$14.990</p>
+              <button>Ver más</button>
+            </div>
+            <div class="card">
+              <img src="./assets/img/kittens.jpg" />
+              <h6>Exploding Kittens</h6>
+              <p>$15.990</p>
+              <button>Ver más</button>
+            </div>
+            <div class="card">
+              <img src="./assets/img/Here to slay.JPG" />
+              <h6>Here to slay</h6>
+              <p>$12.990</p>
+              <button>Ver más</button>
+            </div>
+            <div class="card">
+              <img src="./assets/img/unstable unicorns.JPG" />
+              <h6>Unstable unicorns expansión</h6>
+              <p>$9.990</p>
+              <button>Ver más</button>
+            </div>
+            <div class="card">
+              <img src="./assets/img/virus.jpg" />
+              <h6>Virus</h6>
+              <p>$13.990</p>
+              <button>Ver más</button>
+            </div>
+          </section>
+        </div>
+
+        <div class="juegodecarta" id="cartas">
+          <h3>Juegos de cartas</h3>
+          <section class="card-container">
+            <div class="card">
+              <img src="./assets/img/tcgop.JPG" />
+              <h6>One piece 500 Years in the future</h6>
+              <p>$135.990</p>
+              <button>Ver más</button>
+            </div>
+            <div class="card">
+              <img src="./assets/img/tcg pkm.JPG" />
+              <h6>Pokemon Tcg</h6>
+              <p>$4.490</p>
+              <button>Ver más</button>
+            </div>
+            <div class="card">
+              <img src="./assets/img/magictcg.JPG" />
+              <h6>Commander Deck</h6>
+              <p>$52.990</p>
+              <button>Ver más</button>
+            </div>
+            <div class="card">
+              <img src="./assets/img/elite triner box.JPG" />
+              <h6>Elite triner box</h6>
+              <p>$19.990</p>
+              <button>Ver más</button>
+            </div>
+            <div class="card">
+              <img src="./assets/img/pkm.JPG" />
+              <h6>My first battle Pokemon</h6>
+              <p>$12.990</p>
+              <button>Ver más</button>
+            </div>
+            <div class="card">
+              <img src="./assets/img/Starter Deck Animal Kingdom Pirates.JPG" />
+              <h6>Starter Deck Animal Kingdom Pirates</h6>
+              <p>$14.990</p>
+              <button>Ver más</button>
+            </div>
+          </section>
+        </div>
+
+        <div class="juegoderol" id="rol">
+          <h3>Juegos de rol</h3>
+          <section class="card-container">
+            <div class="card">
+              <img src="./assets/img/dyd.JPG" />
+              <h6>Dungeon master´s guide</h6>
+              <p>$49.990</p>
+              <button>Ver más</button>
+            </div>
+            <div class="card">
+              <img src="./assets/img/elanillo.JPG" />
+              <h6>El anillo único</h6>
+              <p>$44.990</p>
+              <button>Ver más</button>
+            </div>
+            <div class="card">
+              <img src="./assets/img/vampiro.JPG" />
+              <h6>Vampiro La mascarada</h6>
+              <p>$19.990</p>
+              <button>Ver más</button>
+            </div>
+            <div class="card">
+              <img src="./assets/img/path.JPG" />
+              <h6>Pathfinder</h6>
+              <p>$42.990</p>
+              <button>Ver más</button>
+            </div>
+            <div class="card">
+              <img src="./assets/img/alien.JPG" />
+              <h6>Alien: El juego de rol</h6>
+              <p>$14.990</p>
+              <button>Ver más</button>
+            </div>
+            <div class="card">
+              <img src="./assets/img/doctor.JPG" />
+              <h6>Doctor Who</h6>
+              <p>$19.990</p>
+              <button>Ver más</button>
+            </div>
+          </section>
+        </div>
+
+        <div class="accesorios" id="accesorios">
+          <h3>Accesorios</h3>
+          <section class="card-container">
+            <div class="card">
+              <img src="./assets/img/dadorosa.jpg" />
+              <h6>Set de dados</h6>
+              <p>$8.990</p>
+              <button>Ver más</button>
+            </div>
+            <div class="card">
+              <img src="./assets/img/protectorcartas.jpg" />
+              <h6>Protectores de cartas</h6>
+              <p>$3.500</p>
+              <button>Ver más</button>
+            </div>
+            <div class="card">
+              <img src="./assets/img/Playmat.jpg" />
+              <h6>Playmat</h6>
+              <p>$24.990</p>
+              <button>Ver más</button>
+            </div>
+            <div class="card">
+              <img src="./assets/img/deckbox.jpg" />
+              <h6>Deckbox</h6>
+              <p>$5.990</p>
+              <button>Ver más</button>
+            </div>
+            <div class="card">
+              <img src="./assets/img/dadoverde.jpg" />
+              <h6>Set de dados</h6>
+              <p>$9.990</p>
+              <button>Ver más</button>
+            </div>
+            <div class="card">
+              <img src="./assets/img/bolsa.JPG" />
+              <h6>Bolsa para dados XL</h6>
+              <p>$12.990</p>
+              <button>Ver más</button>
+            </div>
+          </section>
+        </div>
+
+        <div class="coleccionables" id="colection">
+          <h3>Coleccionables</h3>
+          <section class="card-container">
+            <div class="card">
+              <img src="./assets/img/One Piece YAMATO S.H.Figuarts 60.webp" />
+              <h6>One Piece YAMATO S.H.Figuarts</h6>
+              <p>$59.990</p>
+              <button>Ver más</button>
+            </div>
+            <div class="card">
+              <img
+                src="./assets/img/DIGIMON ADVENTURE - WARGREYMON (AMPLIFIED) FIGURE-RISE STANDARD 56.jpg"
+              />
+              <h6>Digimon Adventure Wargreymon</h6>
+              <p>$56.990</p>
+              <button>Ver más</button>
+            </div>
+            <div class="card">
+              <img src="./assets/img/jinx arcane 1-7 215.JPG" />
+              <h6>Jinx Arcane escala 1/7</h6>
+              <p>$215.990</p>
+              <button>Ver más</button>
+            </div>
+            <div class="card">
+              <img
+                src="./assets/img/S.H.MonsterArts - Rathalos (20th Anniversary Edition) - Monster Hunter.JPG"
+              />
+              <h6>Rathalos (20th Anniversary Edition)</h6>
+              <p>$189.990</p>
+              <button>Ver más</button>
+            </div>
+            <div class="card">
+              <img src="./assets/img/Kaidou.JPG" />
+              <h6>Kaidou (Man-beast form)</h6>
+              <p>$159.990</p>
+              <button>Ver más</button>
+            </div>
+            <div class="card">
+              <img src="./assets/img/EG 1 144 RX-93FF Nu Gundam.JPG" />
+              <h6>EG 1/144 RX-93FF Nu Gundam</h6>
+              <p>$24.990</p>
+              <button>Ver más</button>
+            </div>
+          </section>
+        </div>
+
+        <div class="librería" id="librería">
+          <h3>Librería</h3>
+          <section class="card-container">
+            <div class="card">
+              <img src="./assets/img/the-art-and-making-of-arcane.jpg" />
+              <h6>The art and making of Arcane (ENG)</h6>
+              <p>$54.990</p>
+              <button>Ver más</button>
+            </div>
+            <div class="card">
+              <img src="./assets/img/One piece  Law novela.jpg" />
+              <h6>One Piece: Law (Novela)</h6>
+              <p>$25.990</p>
+              <button>Ver más</button>
+            </div>
+            <div class="card">
+              <img
+                src="./assets/img/Las recetas de las películas del Studio Ghibli.jpg"
+              />
+              <h6>Las recetas de las películas del...</h6>
+              <p>$19.990</p>
+              <button>Ver más</button>
+            </div>
+            <div class="card">
+              <img src="./assets/img/Dungeons & Dragons Art & Arcana.JPG" />
+              <h6>Dungeons & Dragons Art & Arcana</h6>
+              <p>$69.990</p>
+              <button>Ver más</button>
+            </div>
+            <div class="card">
+              <img src="./assets/img/eldenring.JPG" />
+              <h6>Elden ring Artbook</h6>
+              <p>$39.990</p>
+              <button>Ver más</button>
+            </div>
+            <div class="card">
+              <img src="./assets/img/pokemon.JPG" />
+              <h6>Pokemon enciclopedia</h6>
+              <p>$19.990</p>
+              <button>Ver más</button>
+            </div>
+          </section>
+        </div>
+
+        <ul class="paginador">
+          <li><a href="#">«</a></li>
+          <li class="activo"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">»</a></li>
+        </ul>
+      </main>
+
+      <footer id="contact">
+        <p>Contáctanos</p>
+        <div class="links">
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-regular fa-envelope"></i></a>
+          <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="newsletter">
+          <form action="" method="POST">
+            <label for="email">Suscríbete a nuestra newsletter</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="tuemail@ejemplo.com"
+              required
+            />
+            <button class="suscribe" type="submit">Suscribirme</button>
+          </form>
+        </div>
+      </footer>
+    </div>
+
+    <a href="#top" class="btn-to-top"><i class="fa-solid fa-house"></i></a>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
